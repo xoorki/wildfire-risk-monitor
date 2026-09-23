@@ -1,4 +1,4 @@
-# wildfire Risk Monitor
+# Wildfire Risk Monitor
 
 A micro:bit embedded system that monitors environmental conditions linked to wildfires and calculates wildfire risk in real time, built for my **2026 Leaving Certificate Computer Science** coursework project.
 
