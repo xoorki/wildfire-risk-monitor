@@ -1,8 +1,6 @@
 import csv
 import time
-import serial
 
-ser = serial.Serial("COM17", 115200, timeout=5)
 
 def risk(temp, humidity, soil_moisture, windspeed):
     fire_risk = 0 
@@ -19,8 +17,6 @@ def risk(temp, humidity, soil_moisture, windspeed):
 
     fire_risk = min(fire_risk, 100)
     return fire_risk
-
-print("Alert:", alert)
 
 with open('BR2_rawData.csv', newline='') as f:
     csvreader = csv.DictReader(f)
